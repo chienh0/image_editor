@@ -1,0 +1,15 @@
+name: image_env
+
+channels:
+  - conda-forge
+
+dependencies:
+  # Required packages
+  - python=3
+  - numpy=1.21
+  - matplotlib=3.7
+  - scikit-image=0.19
+  - opencv=4.5
+  - pip
+  - pip:
+    - copy==1.0.0

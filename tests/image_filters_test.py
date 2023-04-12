@@ -1,4 +1,4 @@
-from image_filters import remove_red, remove_green, remove_blue
+from image_filters import remove_red, remove_green, remove_blue, invert_red, invert_green, invert_blue
 
 
 def test_remove_red():
@@ -32,3 +32,34 @@ def test_remove_blue():
         [[0, 0, 0], [255, 0, 0]],
         [[0, 255, 0], [0, 0, 0]],
     ]
+
+
+def test_invert_red():
+    assert invert_red([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
+        [[255, 0, 0], [0, 0, 0]], 
+        [[255, 255, 0], [255, 0, 255]]
+    ]
+    assert invert_red([[[100, 100, 100]]]) == [
+        [[155, 100, 100]]
+    ]
+
+
+def test_invert_green():
+    assert invert_green([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
+        [[0, 255, 0], [255, 255, 0]], 
+        [[0, 0, 0], [0, 255, 255]]
+    ]
+    assert invert_green([[[100, 100, 100]]]) == [
+        [[[100, 155, 100]]]
+    ]
+
+
+def test_invert_blue():
+    assert test_invert_blue([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
+        [[0, 0, 255], [255, 0, 255]], 
+        [[0, 255, 255], [0, 0, 0]]
+    ]
+    assert test_invert_blue([[[100, 100, 100]]]) == [
+        [[[100, 100, 155]]]
+    ]
+

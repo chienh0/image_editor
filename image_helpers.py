@@ -21,7 +21,7 @@ def get_image_pixels(image_url):
     return pixel_data
 
 
-def render_pixels(pixel_data):
+def render_pixels(pixel_data, title=None):
     """Displays the image represented by pixel_data"""
     # Write the pixel_data to a local image file
     transformed_data = copy.deepcopy(pixel_data)
@@ -31,5 +31,8 @@ def render_pixels(pixel_data):
     cv2.imwrite("rendered.jpg", numpy.array(transformed_data))
     # Display that image file
     image = mpimg.imread("rendered.jpg")
+    plt.title(title)
     plt.imshow(image)
     plt.show()
+
+    

@@ -1,6 +1,6 @@
-## Photo Filter: Filtering photos using terminal
+## Photo Filter: Filter Web Images Using the Terminal
 ### Project Goal 
-To allow users to filter their images using passing a URL.
+To enable users to filter web images using only a URL.
 
 ### Tech Stack
 <p float='left'>
@@ -10,20 +10,20 @@ To allow users to filter their images using passing a URL.
 ### From Picture to Pixels
 The program finds a picture on the web, loads the picture file into Python, and converts that file into an array of pixels. Each pixel contains Red, Green, Blue (RGB) values that can be manipulated.
 
-### ✏︎ For you to do:
-* Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 pixture has 60,000 pixels!
-  * *Right Click*  > *Copy Image Address*
-  * That URL _must_ be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
+### How to Use:
+* Step 1: Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 picture has 60,000 pixels!
+  * Right-click on the image and select "Copy Image Address".
+  * The URL must be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
 * Using the terminal, 
-  * Clone the repository
+  * Clone the repository:
   ```
   git clone https://github.com/chienqho/photo_filter.git
   ```
-  * Execute the main python script
+  * Execute the main Python script:
   ```
   python3 main.py 
   ```
-  * Enter URL of desired image
+  * Enter the URL of the desired image when prompted:
   ```
   Enter the URL of the image to process:
   ```
@@ -54,6 +54,12 @@ _If you haven't used the RGB color scheme before, play around with [this RGB col
 The picture you loaded in above is represented the same way in the `pixel_data` list, but it's a much longer list, so it's harder to just look at it and immediately understand each value. 
 
 ### Available Filters 
+The program offers several filters that you can use to modify the image, including:
+  * Remove Red/Green/Blue color
+  * Invert Red/Green/Blue color
+  * Grayscale conversion
+  * Horizontal/vertical flip
+
 <p float='left'>
   <img src='/examples/chicken_original.png' width='300' />
 </p>
@@ -82,5 +88,4 @@ The picture you loaded in above is represented the same way in the `pixel_data` 
 </p>
 
 ### Attribution
-
 Inspiration for this project comes from the [PPM Image Editor project](http://nifty.stanford.edu/2012/guerin-image-editor/) by Joshua Guerin T and Debby Keen, as presented at SIGCSE Nifty Projects 2012.

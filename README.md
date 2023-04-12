@@ -12,8 +12,8 @@ The program finds a picture on the web, loads the picture file into Python, and 
 
 ### ✏︎ For you to do:
 * Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 pixture has 60,000 pixels!
-* *Right Click*  > *Copy Image Address*
-* That URL _must_ be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
+  * *Right Click*  > *Copy Image Address*
+  * That URL _must_ be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
 * Using the terminal, 
   * Clone the repository
   ```
@@ -55,30 +55,30 @@ The picture you loaded in above is represented the same way in the `pixel_data` 
 
 ### Available Filters 
 <p float='left'>
-  <img src='/examples/chicken_original.png' width='200' />
+  <img src='/examples/chicken_original.png' width='300' />
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_red_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_green_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_blue_removed.png' width='200' />
+  <img src='/examples/chicken_red_removed.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_green_removed.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_blue_removed.png' width='300' />
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_red_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_green_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_blue_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_total_inversion.png' width='200' />
+  <img src='/examples/chicken_red_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_green_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_blue_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_total_inversion.png' width='300' />
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_grayscale.png' width='200' />
+  <img src='/examples/chicken_grayscale.png' width='300' />
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_horizontal_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_vertical_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_horizontal_and_vertical_flip.png' width='200' />
+  <img src='/examples/chicken_horizontal_flip.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_vertical_flip.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_horizontal_and_vertical_flip.png' width='300' />
 </p>
 
 ### Attribution

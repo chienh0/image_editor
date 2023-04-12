@@ -4,7 +4,7 @@ To allow users to filter their images using passing a URL.
 
 ### Tech Stack
 <p float='left'>
-  <img src='/images/logo_python.png' width='110' />
+  <img src='/examples/logo_python.png' width='110' />
 </p>
 
 ### From Picture to Pixels
@@ -12,12 +12,26 @@ The program finds a picture on the web, loads the picture file into Python, and 
 
 ### ✏︎ For you to do:
 * Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 pixture has 60,000 pixels!
+* *Right Click*  > *Copy Image Address*
 * That URL _must_ be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
+* Using the terminal, 
+  * Clone the repository
+  ```
+  git clone https://github.com/chienqho/photo_filter.git
+  ```
+  * Execute the main python script
+  ```
+  python3 main.py 
+  ```
+  * Enter URL of desired image
+  ```
+  Enter the URL of the image to process:
+  ```
 
 ### Exploring the Pixel Data
 Let's explore how the pixels are actually stored. We'll start with a simpler example: a picture that's just 2 pixels by 2 pixels.
 <p float='left'>
-  <img src='/images/rgbsquare.png' width='50' />
+  <img src='/examples/rgbsquare.png' width='50' />
 </p>
 
 In the top row, the first pixel is black and the second is red. In the bottom row, the first pixel is green and the second is blue.
@@ -41,30 +55,30 @@ The picture you loaded in above is represented the same way in the `pixel_data` 
 
 ### Available Filters 
 <p float='left'>
-  <img src='/pictures/chicken_original.png' width='200' />
+  <img src='/examples/chicken_original.png' width='200' />
 </p>
 
 <p float='left'>
-  <img src='/pictures/chicken_red_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/pictures/chicken_green_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/pictures/chicken_blue_removed.png' width='200' />
+  <img src='/examples/chicken_red_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_green_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_blue_removed.png' width='200' />
 </p>
 
 <p float='left'>
-  <img src='/pictures/chicken_red_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/pictures/chicken_green_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/pictures/chicken_blue_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/pictures/chicken_total_inversion.png' width='200' />
+  <img src='/examples/chicken_red_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_green_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_blue_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_total_inversion.png' width='200' />
 </p>
 
 <p float='left'>
-  <img src='/pictures/chicken_grayscale.png' width='200' />
+  <img src='/examples/chicken_grayscale.png' width='200' />
 </p>
 
 <p float='left'>
-  <img src='/pictures/chicken_horizontal_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/pictures/chicken_vertical_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/pictures/chicken_horizontal_and_vertical_flip.png' width='200' />
+  <img src='/examples/chicken_horizontal_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_vertical_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_horizontal_and_vertical_flip.png' width='200' />
 </p>
 
 ### Attribution

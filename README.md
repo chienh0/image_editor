@@ -11,7 +11,7 @@ To enable users to filter web images using only a URL.
 The program finds a picture on the web, loads the picture file into Python, and converts that file into an array of pixels. Each pixel contains Red, Green, Blue (RGB) values that can be manipulated.
 
 ### How to Use:
-* Step 1: Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 picture has 60,000 pixels!
+* Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 picture has 60,000 pixels!
   * Right-click on the image and select "Copy Image Address".
   * The URL must be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
 * Using the terminal, 

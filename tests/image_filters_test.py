@@ -1,4 +1,4 @@
-from image_filters import remove_red, remove_green, remove_blue, invert_red, invert_green, invert_blue
+from image_filters import remove_red, remove_green, remove_blue, invert_red, invert_green, invert_blue, grayscale, flip_horizontal, flip_vertical
 
 
 def test_remove_red():
@@ -50,16 +50,50 @@ def test_invert_green():
         [[0, 0, 0], [0, 255, 255]]
     ]
     assert invert_green([[[100, 100, 100]]]) == [
-        [[[100, 155, 100]]]
+        [[100, 155, 100]]
     ]
 
 
 def test_invert_blue():
-    assert test_invert_blue([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
+    assert invert_blue([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
         [[0, 0, 255], [255, 0, 255]], 
         [[0, 255, 255], [0, 0, 0]]
     ]
-    assert test_invert_blue([[[100, 100, 100]]]) == [
-        [[[100, 100, 155]]]
+    assert invert_blue([[[100, 100, 100]]]) == [
+        [[100, 100, 155]]
     ]
 
+
+def test_grayscale():
+    assert grayscale([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
+        [[0, 0, 0], [85, 85, 85]], 
+        [[85, 85, 85], [85, 85, 85]]
+    ]
+    assert grayscale([[[100, 50, 25], [25, 50, 125]], [[5, 10, 15], [20, 30, 40]]]) == [
+        [[58, 58, 58], [67, 67, 67]], 
+        [[10, 10, 10], [30, 30, 30]]
+    ]
+
+
+def test_flip_horizontal():
+    assert flip_horizontal([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) ==  [
+        [[255, 0, 0], [0, 0, 0]], 
+        [[0, 0, 255], [0, 255, 0]]
+    ]
+    assert flip_horizontal([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]], [[40, 50, 60], [10, 20, 30]]]) == [
+        [[255, 0, 0], [0, 0, 0]], 
+        [[0, 0, 255], [0, 255, 0]], 
+        [[10, 20, 30], [40, 50, 60]]
+    ]
+
+
+def test_flip_vertical():
+    assert flip_vertical([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]]]) == [
+        [[0, 255, 0], [0, 0, 255]], 
+        [[0, 0, 0], [255, 0, 0]]
+    ]
+    assert flip_vertical([[[0, 0, 0], [255, 0, 0]], [[0, 255, 0], [0, 0, 255]], [[40, 50, 60], [10, 20, 30]]]) == [
+        [[40, 50, 60], [10, 20, 30]], 
+        [[0, 255, 0], [0, 0, 255]], 
+        [[0, 0, 0], [255, 0, 0]]
+    ]

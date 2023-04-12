@@ -1,6 +1,6 @@
 import json
 from image_helpers import get_image_pixels, render_pixels
-from image_filters import remove_red, remove_green, remove_blue, invert_red, invert_green, invert_blue
+from image_filters import remove_red, remove_green, remove_blue, invert_red, invert_green, invert_blue, grayscale, flip_horizontal, flip_vertical
 
 # Read the configuration file
 with open('config.json') as f:
@@ -31,4 +31,16 @@ render_pixels(invert_green(pixel_data), 'Green Inverted')
 render_pixels(invert_blue(pixel_data), 'Blue Inverted')
 
 # Render the total inversion image
-render_pixels(invert_blue(invert_green(invert_red(pixel_data, 'Total Inversion'))))
+render_pixels(invert_blue(invert_green(invert_red(pixel_data))), 'Total Inversion')
+
+# Render the grayscale image
+render_pixels(grayscale(pixel_data), 'Grayscale')
+
+# Render the horizontal flip image
+render_pixels(flip_horizontal(pixel_data), 'Horizontal Flip')
+
+# Render the vertical flip image
+render_pixels(flip_vertical(pixel_data), 'Vertical Flip')
+
+# Render the horizontal and vertical flip image
+render_pixels(flip_vertical(flip_horizontal(pixel_data)), 'Horizontal and Vertical Flip')

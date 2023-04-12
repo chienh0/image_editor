@@ -53,3 +53,30 @@ def invert_blue(pixel_data):
         for pixel in row:
             pixel[2] = 255 - pixel[2] 
     return new_pixel_data
+
+
+def grayscale(pixel_data):
+    """ Converts all the pixels in a pixel list to grayscale."""
+    new_pixel_data = copy.deepcopy(pixel_data)
+    for row in new_pixel_data:
+        for pixel in row:
+            sum_pixel = pixel[0] + pixel[1] + pixel[2]
+            pixel[0] = round(sum_pixel / 3)
+            pixel[1] = round(sum_pixel / 3)
+            pixel[2] = round(sum_pixel / 3)
+    return new_pixel_data
+
+
+def flip_horizontal(pixel_data):
+    """ Flips the pixels in the list so that the left-most become the right-most."""
+    new_pixel_data = copy.deepcopy(pixel_data)
+    for row in new_pixel_data:
+        row.reverse()
+    return new_pixel_data
+
+
+def flip_vertical(pixel_data):
+    """ Flips the pixels in the list so that the top-most become the bottom-most."""
+    new_pixel_data = copy.deepcopy(pixel_data)
+    new_pixel_data.reverse()
+    return new_pixel_data

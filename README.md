@@ -4,7 +4,7 @@ To allow users to filter their images using passing a URL.
 
 ### Tech Stack
 <p float='left'>
-  <img src='/images/logo_python.png' width='130' />
+  <img src='/images/logo_python.png' width='110' />
 </p>
 
 ### From Picture to Pixels
@@ -38,6 +38,34 @@ Each pixel is represented using the  Red-Green-Blue (RGB) scheme for pixels, wit
 _If you haven't used the RGB color scheme before, play around with [this RGB color picker](https://www.rapidtables.com/web/color/RGB_Color.html) to get a feel for how different amounts of R/G/B make up different colors._
 
 The picture you loaded in above is represented the same way in the `pixel_data` list, but it's a much longer list, so it's harder to just look at it and immediately understand each value. 
+
+### Available Filters 
+<p float='left'>
+  <img src='/pictures/chicken_original.png' width='200' />
+</p>
+
+<p float='left'>
+  <img src='/pictures/chicken_red_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/pictures/chicken_green_removed.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/pictures/chicken_blue_removed.png' width='200' />
+</p>
+
+<p float='left'>
+  <img src='/pictures/chicken_red_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/pictures/chicken_green_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/pictures/chicken_blue_inverted.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/pictures/chicken_total_inversion.png' width='200' />
+</p>
+
+<p float='left'>
+  <img src='/pictures/chicken_grayscale.png' width='200' />
+</p>
+
+<p float='left'>
+  <img src='/pictures/chicken_horizontal_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/pictures/chicken_vertical_flip.png' width='200' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/pictures/chicken_horizontal_and_vertical_flip.png' width='200' />
+</p>
 
 ### Attribution
 

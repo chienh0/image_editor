@@ -1,19 +1,15 @@
 ## Image Editor: Filters Web Images using the Terminal
 
-
 ### Project Goal 
 To enable users to filter web images using only a URL.
-
 
 ### Tech Stack
 <p float='left'>
   <img src='/examples/logo_python.png' width='110' />
 </p>
 
-
 ### From Picture to Pixels
 The program finds a picture on the web, loads the picture file into Python, and converts that file into an array of pixels. Each pixel contains Red, Green, Blue (RGB) values that can be manipulated.
-
 
 ### How to Use:
 * Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x250 picture has 60,000 pixels!
@@ -65,7 +61,6 @@ Each pixel is represented using the  Red-Green-Blue (RGB) scheme for pixels, wit
 
 _If you haven't used the RGB color scheme before, play around with [this RGB color picker](https://www.rapidtables.com/web/color/RGB_Color.html) to get a feel for how different amounts of R/G/B make up different colors._
 
-
 ### Available Filters 
 The program offers several filters that you can use to modify the image, including:
   * Remove Red/Green/Blue color
@@ -96,7 +91,6 @@ The program offers several filters that you can use to modify the image, includi
   <img src='/examples/chicken_vertical_flip.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp; 
   <img src='/examples/chicken_horizontal_and_vertical_flip.png' width='250' />
 </p>
-
 
 ### Attribution
 Inspiration for this project comes from the [PPM Image Editor project](http://nifty.stanford.edu/2012/guerin-image-editor/) by Joshua Guerin T and Debby Keen, as presented at SIGCSE Nifty Projects 2012.

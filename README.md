@@ -1,4 +1,4 @@
-## Photo Filter: Filter Web Images Using the Terminal
+## Image Editor: Apply Filters Web Images using the Terminal
 ### Project Goal 
 To enable users to filter web images using only a URL.
 

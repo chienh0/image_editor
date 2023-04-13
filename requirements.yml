@@ -10,6 +10,7 @@ dependencies:
   - matplotlib=3.7
   - scikit-image=0.19
   - opencv=4.5
+  - pytest=7.1
   - pip
   - pip:
     - copy==1.0.0

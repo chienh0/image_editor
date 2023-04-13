@@ -7,4 +7,4 @@ def test_get_image_pixels():
     )
     assert len(pixels) == 249
     assert len(pixels[0]) == 320
-    assert (pixels[0][0]) == [73, 66, 11]
+    assert pixels[0][0] == [73, 66, 11]

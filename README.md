@@ -61,7 +61,9 @@ The program offers several filters that you can use to modify the image, includi
   * Horizontal/vertical flip
 
 <p float='left'>
-  <img src='/examples/chicken_original.png' width='300' />
+  <img src='/examples/chicken_original.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_total_inversion.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_grayscale.png' width='300' />
 </p>
 
 <p float='left'>
@@ -73,12 +75,7 @@ The program offers several filters that you can use to modify the image, includi
 <p float='left'>
   <img src='/examples/chicken_red_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
   <img src='/examples/chicken_green_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_blue_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_total_inversion.png' width='300' />
-</p>
-
-<p float='left'>
-  <img src='/examples/chicken_grayscale.png' width='300' />
+  <img src='/examples/chicken_blue_inverted.png' width='300' />
 </p>
 
 <p float='left'>

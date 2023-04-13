@@ -19,6 +19,14 @@ The program finds a picture on the web, loads the picture file into Python, and 
   ```
   git clone https://github.com/chienqho/image_editor.git
   ```
+  * Create conda environment to install and manage all the python packages:
+  ```
+  conda env create --file environment.yml   
+  ```
+  * Activate conda environment to access the recently installed python packages:
+  ```
+  conda activate image_env 
+  ```
   * Execute the main Python script:
   ```
   python3 main.py 

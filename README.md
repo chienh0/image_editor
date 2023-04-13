@@ -17,7 +17,7 @@ The program finds a picture on the web, loads the picture file into Python, and 
 * Using the terminal, 
   * Clone the repository:
   ```
-  git clone https://github.com/chienqho/photo_filter.git
+  git clone https://github.com/chienqho/image_editor.git
   ```
   * Execute the main Python script:
   ```

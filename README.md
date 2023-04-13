@@ -11,7 +11,7 @@ To enable users to filter web images using only a URL.
 The program finds a picture on the web, loads the picture file into Python, and converts that file into an array of pixels. Each pixel contains Red, Green, Blue (RGB) values that can be manipulated.
 
 ### How to Use:
-* Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x300 picture has 60,000 pixels!
+* Find a picture on the web. A smaller picture is actually better at first, since your program will run faster and you can iterate more quickly. Even a 200x250 picture has 60,000 pixels!
   * Right-click on the image and select "Copy Image Address".
   * The URL must be to an image file (ending with an extension like .jpg/.png/.gif/.webp), not to a webpage displaying the image.
 * Using the terminal, 
@@ -69,27 +69,27 @@ The program offers several filters that you can use to modify the image, includi
   * Horizontal/vertical flip
 
 <p float='left'>
-  <img src='/examples/chicken_original.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_grayscale.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_total_inversion.png' width='300' /> 
+  <img src='/examples/chicken_original.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_grayscale.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_total_inversion.png' width='250' /> 
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_red_removed.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_green_removed.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_blue_removed.png' width='300' />
+  <img src='/examples/chicken_red_removed.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_green_removed.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_blue_removed.png' width='250' />
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_red_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_green_inverted.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_blue_inverted.png' width='300' />
+  <img src='/examples/chicken_red_inverted.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_green_inverted.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_blue_inverted.png' width='250' />
 </p>
 
 <p float='left'>
-  <img src='/examples/chicken_horizontal_flip.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src='/examples/chicken_vertical_flip.png' width='300' />&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src='/examples/chicken_horizontal_and_vertical_flip.png' width='300' />
+  <img src='/examples/chicken_horizontal_flip.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src='/examples/chicken_vertical_flip.png' width='250' />&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src='/examples/chicken_horizontal_and_vertical_flip.png' width='250' />
 </p>
 
 ### Attribution

@@ -41,7 +41,7 @@ The program finds a picture on the web, loads the picture file into Python, and 
 ### Exploring the Pixel Data
 Let's explore how the pixels are actually stored. We'll start with a simpler example: a picture that's just 2 pixels by 2 pixels.
 <p float='left'>
-  <img src='/examples/rgbsquare.png' width='50' />
+  <img src='/examples/rgbsquare.png' width='25' />
 </p>
 
 In the top row, the first pixel is black and the second is red. In the bottom row, the first pixel is green and the second is blue.

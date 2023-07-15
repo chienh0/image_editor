@@ -93,4 +93,4 @@ The program offers several filters that you can use to modify the image, includi
 </p>
 
 ### Attribution
-Inspiration for this project comes from the [PPM Image Editor project](http://nifty.stanford.edu/2012/guerin-image-editor/) by Joshua Guerin T and Debby Keen, as presented at SIGCSE Nifty Projects 2012.
+Inspiration for this project comes from the [PPM Image Editor project](http://nifty.stanford.edu/2012/guerin-image-editor/) by Joshua Guerin T and Debby Keen, as presented at SIGCSE Nifty Projects 2012. In addition, I wanted to give a personal thank you to Pamela Fox and Murtaza Ali who introduced me to this project through CoRise's Python Crash Course.
